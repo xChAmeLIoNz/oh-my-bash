@@ -21,13 +21,14 @@ function _omb_theme_PROMPT_COMMAND() {
 
   local SC
   if ((status == 0)); then
-    SC="$_omb_prompt_teal-$_omb_prompt_bold_green(${_omb_prompt_green}ಠ_ಠ $_omb_prompt_bold_green)";
+    # SC="$_omb_prompt_teal-$_omb_prompt_bold_green(${_omb_prompt_green}✓$_omb_prompt_bold_green)";
+    :
   else
-    SC="$_omb_prompt_teal-$_omb_prompt_bold_green(${_omb_prompt_brown}ಡ_ಡ $_omb_prompt_bold_green)";
+    SC="$_omb_prompt_teal-$_omb_prompt_bold_green(${_omb_prompt_brown}✗$_omb_prompt_bold_green)";
   fi
 
   # SC_CHECK=1 if you want to see SC in ps1
-  local SC_CHECK=0
+  local SC_CHECK=1
 
   if [ $SC_CHECK -eq 0 ]; then
     SC=""

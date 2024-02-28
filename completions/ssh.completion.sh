@@ -33,4 +33,4 @@ function _omb_completion_ssh {
   _omb_completion_resolve_breaks
 }
 
-complete -o default -o nospace -F _omb_completion_ssh ssh scp
+complete -o default -o nospace -F _omb_completion_ssh ssh scp rcode
